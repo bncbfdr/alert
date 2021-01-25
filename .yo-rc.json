@@ -1,0 +1,38 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.fuxin.alert"
+    },
+    "jhipsterVersion": "6.10.5",
+    "applicationType": "microservice",
+    "baseName": "alert",
+    "packageName": "com.fuxin.alert",
+    "packageFolder": "com/fuxin/alert",
+    "serverPort": "8081",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YzY5MWM1MzFmNGMwZjFmM2VmOTM4MjFlMzVkMjk1NTdmNzJjYzVkOWE1NDllMGRhYjIyNmE2ZjdmYjM1MTUyOTdlNTllNjM1NmJjNGM0NTY0ODRjNmI0NGQzMzMwY2EzNTkyN2U1YmNhMmI4NzE1NTAxMjJlYjFmMWZjMWY0ODM=",
+    "embeddableLaunchScript": false,
+    "creationTimestamp": 1610005893544,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "yarn",
+    "blueprints": [],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
