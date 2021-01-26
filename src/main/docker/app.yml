@@ -12,6 +12,6 @@ services:
       - SPRING_DATASOURCE_USERNAME=root
       - SPRING_DATASOURCE_PASSWORD=root
     volumes:
-      - ./data/salt/salt:/usr/share/nginx/html/agents
+      - /app/aiops/java/log:/app/aiops/java/log
 
 
