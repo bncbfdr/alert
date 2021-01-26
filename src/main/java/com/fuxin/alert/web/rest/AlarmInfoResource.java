@@ -42,8 +42,6 @@ public class AlarmInfoResource {
 
     private final AlarmInfoRepository alarmInfoRepository;
 
-    @Autowired
-    private AlertService alertService;
 
     public AlarmInfoResource(AlarmInfoRepository alarmInfoRepository) {
         this.alarmInfoRepository = alarmInfoRepository;
