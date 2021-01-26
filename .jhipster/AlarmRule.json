@@ -1,0 +1,106 @@
+{
+  "name": "AlarmRule",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "alarmType",
+      "fieldType": "AlarmType",
+      "fieldValues": "EVENT_COUNT,FIELD,BLACKLIST,WHITELIST,SPIKE,PERCENTAGEMATCH,METRICAGGREGATION,KEYWORDS,SPIKE_AGGREGATION,NEW_TERM"
+    },
+    {
+      "fieldName": "conf",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "notifyType",
+      "fieldType": "NotifyType",
+      "fieldValues": "NULL,EMAIL,MESSAGE,RSYSLOG,POST,WECHAT"
+    },
+    {
+      "fieldName": "notifyRole",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "notifyMember",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createTime",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "modifiedTime",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "modifiedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "category",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "categoryId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "eventRuleName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "eventRuleId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "alertTemplate",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "solveSolution",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "alarmLevel",
+      "otherEntityRelationshipName": "alarmRule",
+      "relationshipName": "alarmLevel",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "alarmInfo",
+      "otherEntityRelationshipName": "alarmRule",
+      "relationshipName": "alarmInfo"
+    }
+  ],
+  "changelogDate": "20210108084131",
+  "entityTableName": "alarm_rule",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "alert",
+  "applications": "*",
+  "microserviceName": "alert"
+}

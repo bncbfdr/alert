@@ -1,0 +1,37 @@
+{
+  "name": "AlarmLevel",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "color",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "alarmRule",
+      "otherEntityRelationshipName": "alarmLevel",
+      "relationshipName": "alarmRule"
+    }
+  ],
+  "changelogDate": "20210108084231",
+  "entityTableName": "alarm_level",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "alert",
+  "applications": "*",
+  "microserviceName": "alert"
+}

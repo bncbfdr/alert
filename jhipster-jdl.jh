@@ -1,0 +1,74 @@
+entity AlarmInfo(alarm_info){
+name String,
+info String,
+checked Integer,
+createdTime Instant,
+createdBy String,
+modifiedTime Instant,
+modifiedBy String
+}
+
+enum AlarmType{
+    EVENT_COUNT,
+    FIELD,
+    BLACKLIST,
+    WHITELIST,
+    SPIKE,
+    PERCENTAGEMATCH,
+    METRICAGGREGATION,
+    KEYWORDS,
+    SPIKE_AGGREGATION,
+    NEW_TERM
+}
+
+enum NotifyType{
+    NULL, EMAIL, MESSAGE, RSYSLOG, POST, WECHAT
+}
+
+ entity AlarmRule(alarm_rule){
+    name String,
+    description String,
+    alarmType AlarmType,
+    conf String,
+    notifyType NotifyType,
+    notifyRole String,
+    notifyMember String,
+    createTime ZonedDateTime,
+    createdBy String,
+    modifiedTime ZonedDateTime,
+    modifiedBy String,
+    status String,
+    category String,
+    categoryId Long,
+    eventRuleName String,
+    eventRuleId Long,
+    alertTemplate String,
+    solveSolution String
+ }
+
+
+entity AlarmLevel(alarm_level){
+ name String,
+ color String,
+ description String
+}
+
+entity PlatformAlert(plaform_alert){
+      title String,
+      desc String,
+      happenTime String,
+      closeTime String,
+      eventStatus String
+}
+
+paginate AlarmRule with pagination
+paginate AlarmInfo with pagination
+
+
+relationship OneToMany{
+AlarmLevel to AlarmRule{alarmLevel}
+}
+
+relationship ManyToOne {
+	AlarmInfo to AlarmRule{alarmInfo}
+}

@@ -1,0 +1,38 @@
+{
+  "name": "PlatformAlert",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "desc",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "happenTime",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "closeTime",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "eventStatus",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210119071931",
+  "entityTableName": "plaform_alert",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "alert",
+  "applications": "*",
+  "microserviceName": "alert"
+}
