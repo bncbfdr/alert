@@ -16,7 +16,8 @@ RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 ADD entrypoint.sh entrypoint.sh
 RUN chmod 755 entrypoint.sh && chown jhipster:jhipster entrypoint.sh
 
-
+# Add rule folder
+RUN mkdir -p /app/aiops/java/log && chown jhipster:jhipster /app/aiops/java/log
 
 USER jhipster
 

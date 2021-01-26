@@ -11,4 +11,7 @@ services:
       - JHIPSTER_SLEEP=30 # gives time for other services to boot before the application
       - SPRING_DATASOURCE_USERNAME=root
       - SPRING_DATASOURCE_PASSWORD=root
+    volumes:
+          - /app/aiops/java/log:/app/aiops/java/log
+
 
