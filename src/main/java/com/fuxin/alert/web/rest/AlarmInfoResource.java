@@ -2,7 +2,6 @@ package com.fuxin.alert.web.rest;
 
 import com.fuxin.alert.domain.AlarmInfo;
 import com.fuxin.alert.repository.AlarmInfoRepository;
-import com.fuxin.alert.service.AlertService;
 import com.fuxin.alert.web.rest.errors.BadRequestAlertException;
 import io.github.jhipster.web.util.HeaderUtil;
 import io.github.jhipster.web.util.PaginationUtil;
